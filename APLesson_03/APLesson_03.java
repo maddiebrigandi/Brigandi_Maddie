@@ -14,7 +14,7 @@ public class APLesson_03
 		int num = keyboard.nextInt();
 		
 		//print the results...
-		System.out.println("Wow! " + num + "is perfect. You're pretty handsome");
+		System.out.println("Wow! " + num + " is perfect. You're pretty handsome");
 		
 	}
 }
