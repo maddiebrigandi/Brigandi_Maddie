@@ -7,9 +7,9 @@ public class Lab_02
 		int amswer = num1*num2;
 		System.out.println("2 multiplied by 4 is " + amswer);
 		String first = "Torrey Pines High School ";
-		String second = "12345 ";
+		String second = "\n12345 ";
 		String third = "Del Mar Heights Rd ";
-		String fourth = "Del Mar, CA 92014";
+		String fourth = "\nDel Mar, CA 92014";
 		System.out.println(first + second + third + fourth);
 		int l = 2;
 		int h = 3;
