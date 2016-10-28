@@ -22,14 +22,15 @@ public class APLab_04_ex2
 		System.out.println("What is your favorite subject? ");
 		String subject = kb.nextLine();
 		
-		System.out.println("***************************");
+		System.out.println("******************************");
 		idcard.format (school, year);
 		idcard.format(firstname, lastname);
 		idcard.format(title, subject);
+		System.out.println("\n******************************");
 	}
 	public void format(String firstname, String lastname)
 	{
-		System.out.printf("\n%20s \t%20s", firstname, lastname);
+		System.out.printf("* %20s \t%20s *\n", firstname, lastname);
 	}
 }
 		

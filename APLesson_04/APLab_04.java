@@ -29,7 +29,7 @@ public class APLab_04
 		receipt.format(item1, price1);
 		receipt.format(item2, price2);
 		receipt.format(item3, price3);
-		
+		]
 		double subtotal = 17;
 		receipt.format("Subtotal: ", subtotal);
 		double tax = 1.36;
@@ -37,9 +37,11 @@ public class APLab_04
 		double total = 18.36;
 		receipt.format("total: ", total);
 		
+		System.out.println("\n\nThank you! Have a great day");
+		
 	}
 	public void format(String item1, double price1)
 	{
-		System.out.printf("\n%2s........     %2.2f", item1, price1);
+		System.out.printf("\n%10s........     %2.2f", item1, price1);
 	}
 }
