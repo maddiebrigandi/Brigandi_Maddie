@@ -4,7 +4,7 @@ public class ExpressionSolver
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
-		System.out.println("Please eneter an expression: ");
+		System.out.println("Please enter an expression: ");
 		String expression = kb.nextLine();
 		ArrayList<String> equation = new ArrayList<>(Arrays.asList(expression.split("")));
 		doEquation (equation, expression);
@@ -19,11 +19,11 @@ public class ExpressionSolver
 			{
 				if (equation.get(i).equals("*"))
 				{
-					equation.set(i, " " + (Integer.parseInt(equation.get(i-1)) * Integer.parseInt(equation.get(i+1))));
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) * Integer.parseInt(equation.get(i+1))));
 				}
 				else
 				{
-					equation.set(i, " " + (Integer.parseInt(equation.get(i-1)) / Integer.parseInt(equation.get(i+1))));
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) / Integer.parseInt(equation.get(i+1))));
 				}
 				equation.remove(i-1);
 				equation.remove(i);
