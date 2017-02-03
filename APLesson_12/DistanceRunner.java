@@ -14,9 +14,6 @@ public class DistanceRunner
  		int y2 = kb.nextInt(); 
  		 
  		Distance object = new Distance(x1, y1, x2, y2); 
- 		System.out.println("Distance: " + Object.getDistance()); 
- 		  
- 		Object.setValues(0, 0, 3, 4); 
- 		System.out.println("Distance: " + Object.getDistance()); 
+ 		System.out.println("Distance: " + object.getDistance()); 
 	} 
  } 

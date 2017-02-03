@@ -4,7 +4,7 @@ import java.util.Scanner;
  	public static void main (String[]args) 
  	{ 
  		Scanner kb = new Scanner(System.in); 
- 		 
+		 
  		System.out.println("Paint: "); 
  		String p = kb.next(); 
  		System.out.println("Interior: "); 
@@ -13,9 +13,9 @@ import java.util.Scanner;
  		String e = kb.next(); 
  		System.out.println("Tires: "); 
  		String t = kb.next(); 
+ 		
+		Car object = new Car(p, i, e, t); 
  		 
- 		Car car1 = new Car(p, i, e, t); 
- 		 
- 		System.out.println("\nYour vehicle is ready......\nPaint: " + car1.getPaint() + "\nInterior: " + car1.getInterior() + "\nEngine: " + car1.getEngine() + "\nTires: " + car1.getTires()); 
+ 		System.out.println("\nYour vehicle is ready......\nPaint: " + object.getPaint() + "\nInterior: " + object.getInterior() + "\nEngine: " + object.getEngine() + "\nTires: " + object.getTires()); 
  	} 
  } 
