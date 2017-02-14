@@ -18,9 +18,9 @@ public class ToyStore
 	{
 		ArrayList<String>toys = new ArrayList<String>(Arrays.asList(toy1.split(", ")));
 		toysList = new ArrayList<>();
-		for(int i=0; i< toysList.size(); i+= 2)
+		for(int i=0; i< toys.size(); i+= 2)
 		{
-			String name = toys.get(i);
+		String name = toys.get(i);
 			String type = toys.get(i+1);
 			Toy t = getThatToy(name);
 			if (t == null)
